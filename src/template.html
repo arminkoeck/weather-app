@@ -1,11 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Project</title>
-</head>
-<body>
-
-</body>
+  </head>
+  <body>
+    <div id="background">
+      <div id="weather-content-container">
+        <div id="detail-weather">
+          <div class="detail-weather-container">
+            <img id="feelslike-image" />
+            <div class="detail-weather-info">
+              <div class="detail-weather-title">Feels Like</div>
+              <div
+                id="detail-weather-feels-like"
+                class="detail-weather-value"
+              ></div>
+            </div>
+          </div>
+          <div class="detail-weather-container">
+            <img id="chance-of-rain-image">
+            <div class="detail-weather-info">
+              <div class="detail-weather-title">Chance of Rain</div>
+              <div
+                id="detail-weather-chance-of-rain"
+                class="detail-weather-value"
+              ></div>
+            </div>
+          </div>
+          <div class="detail-weather-container">
+            <img id="cloud-cover-image"/>
+            <div class="detail-weather-info">
+              <div class="detail-weather-title">Cloud Cover</div>
+              <div
+                id="detail-weather-cloud-cover"
+                class="detail-weather-value"
+              ></div>
+            </div>
+          </div>
+          <div class="detail-weather-container">
+            <img id="wind-speed-image" />
+            <div class="detail-weather-info">
+              <div class="detail-weather-title">Wind Speed</div>
+              <div
+                id="detail-weather-wind-speed"
+                class="detail-weather-value"
+              ></div>
+            </div>
+          </div>
+          <div class="detail-weather-container">
+            <img id="humidity-image"/>
+            <div class="detail-weather-info">
+              <div class="detail-weather-title">Humidity</div>
+              <div
+                id="detail-weather-humidity"
+                class="detail-weather-value"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div id="current-weather">
+          <div id="current-weather-top-container">
+            <div id="current-weather-temp-container">
+              <div id="current-weather-location"></div>
+              <div id="current-weather-temp-icon-container">
+                <div id="current-weather-temp"></div>
+                <div id="current-weather-icon"></div>
+              </div>
+              <div id="current-weather-date-container">
+                <div id="current-weather-day"></div>
+                <div id="current-weather-date"></div>
+              </div>
+              <div id="current-weather-max-min-container">
+                <div id="current-weather-max-temp"></div>
+                <div id="current-weather-min-temp"></div>
+              </div>
+              <div id="current-weather-text"></div>
+            </div>
+          </div>
+          <div id="current-weather-sun-container">
+            <div id="current-weather-sunrise-container">
+              <div class="sun-title">Sunrise</div>
+              <div id="current-weather-sunrise"></div>
+            </div>
+            <div id="current-weather-sunset-container">
+              <div class="sun-title">Sunset</div>
+              <div id="current-weather-sunset"></div>
+            </div>
+          </div>
+          <div id="current-weather-bot-container">
+            <input type="text" id="location" />
+            <div id="error-message"></div>
+            <button id="search-button">Search</button>
+            <button id="change-temp">°C / F</button>
+          </div>
+        </div>
+        <div id="daily-forecast"></div>
+        <div id="hourly-forecast"></div>
+      </div>
+    </div>
+  </body>
 </html>
